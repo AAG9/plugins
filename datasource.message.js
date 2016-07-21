@@ -19,7 +19,7 @@ freeboard.loadDatasourcePlugin({
 	}
 });
 
-var dynamicMessageTopicPlugin = function(settings, updateCallback)
+var dynamicMessageTopicPlugin = functio(settings, updateCallback)
 {
 
 	var self = this;

@@ -145,8 +145,8 @@ var dynamicDialWidgetPlugin = function(settings, updateCallback)
 
 freeboard.loadWidgetPlugin({
 	// Same stuff here as with datasource plugin.
-	"type_name"   : "dial_widget",
-	"display_name": "Dial",
+	"type_name"   : "dynamic_dial_widget",
+	"display_name": "Dynamic Dial",
     "description" : "A dial that connects to a message topic",
 	// **external_scripts** : Any external scripts that should be loaded before the plugin instance is created.
 	"external_scripts": [			

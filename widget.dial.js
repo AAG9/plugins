@@ -1,4 +1,4 @@
-var dialWidgetPlugin = function(settings, updateCallback)
+var dynamicDialWidgetPlugin = function(settings, updateCallback)
 {
 	var self = this;
 	var currentSettings = settings;
@@ -177,6 +177,6 @@ freeboard.loadWidgetPlugin({
 	// Same as with datasource plugin, but there is no updateCallback parameter in this case.
 	newInstance   : function(settings, newInstanceCallback, updateCallback)
 	{
-		newInstanceCallback(new dialWidgetPlugin(settings, updateCallback));
+		newInstanceCallback(new dynamicDialWidgetPlugin(settings, updateCallback));
 	}
 });

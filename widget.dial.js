@@ -1,4 +1,4 @@
-var dialWidgetPlugin = function(settings, updateCallback)
+var dynamicDialWidgetPlugin = function(settings, updateCallback)
 {
 	var self = this;
 	var currentSettings = settings;
@@ -145,8 +145,8 @@ var dialWidgetPlugin = function(settings, updateCallback)
 
 freeboard.loadWidgetPlugin({
 	// Same stuff here as with datasource plugin.
-	"type_name"   : "dial_widget",
-	"display_name": "Dial",
+	"type_name"   : "dial",
+	"display_name": "Dial Widget",
     "description" : "A dial that connects to a message topic",
 	// **external_scripts** : Any external scripts that should be loaded before the plugin instance is created.
 	"external_scripts": [			
@@ -177,6 +177,6 @@ freeboard.loadWidgetPlugin({
 	// Same as with datasource plugin, but there is no updateCallback parameter in this case.
 	newInstance   : function(settings, newInstanceCallback, updateCallback)
 	{
-		newInstanceCallback(new dialWidgetPlugin(settings, updateCallback));
+		newInstanceCallback(new dynamicDialWidgetPlugin(settings, updateCallback));
 	}
 });
